@@ -24,7 +24,7 @@ AnticipatedGame.create(name: "Baldur's Gate 3", platforms: "Mac, PC, Playstation
 AnticipatedGame.create(name: "Assassin's Creed Mirage", platforms: "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S", release_date: "2023", image: "https://images.app.goo.gl/yXYz7ugYLviqGiACA")
 AnticipatedGame.create(name: "Armored Core VI: Fires of Rubicon", platforms: "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S", release_date: "2023", image: "https://images.app.goo.gl/27TP5M5pMT7GSPgp7")
 AnticipatedGame.create(name: "Alan Wake 2", platforms: "PC, PlayStation 5, Xbox Sereis X/S", release_date: "2023", image: "https://images.app.goo.gl/8kiG7QQtQbjRqJKp7")
-AnticipatedGame.create(name: "Final Fantasy XVI", platforms: "PlayStation 5", release_date: "06/22/2023" image: "https://images.app.goo.gl/MC1uSQziLgf9P11U8")
+AnticipatedGame.create(name: "Final Fantasy XVI", platforms: "PlayStation 5", release_date: "06/22/2023", image: "https://images.app.goo.gl/MC1uSQziLgf9P11U8")
 AnticipatedGame.create(name: "Diablo IV", platforms: "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S", release_date: "06/06/2023", image: "https://images.app.goo.gl/upambQrpUdbvArBQ9")
 AnticipatedGame.create(name: "Street Fighter 6", platforms: "PC, PlayStation 4, PlayStation 5, Xbox SEries X/S", release_date: "06/02/2023", image: "https://images.app.goo.gl/jFqd9gtriKmzv1jT8")
 AnticipatedGame.create(name:"Suicide Squad: Kill the Justice League", platforms: "PC, PlayStation 5, Xbox Series X/S", release_date: "05/26/2023", image: "https://images.app.goo.gl/vNsfDsbzpY7J89MUA")
