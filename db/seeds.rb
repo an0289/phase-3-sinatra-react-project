@@ -38,6 +38,21 @@ AnticipatedGame.create(name: "Dead Space (Remake)", platforms: "PC, PlayStation 
 AnticipatedGame.create(name: "Forspoken", platforms: "PC, PlayStation 5", release_date: "01/24/2023", image: "https://images.app.goo.gl/hU96ZLmLor6C8cYU6")
 AnticipatedGame.create(name: "Fire Emblem Engage", platforms: "Nintendo Switch", release_date: "01/20/2023", image: "https://images.app.goo.gl/qSAa3KSANpFu68kbA")
 
+10.times do
+    User.create(name: Faker::Name.name)
+end 
+
+rand(1).times do
+    user = User.order('RANDOM()').first
+    Review.create(
+        score: rand(1..10),
+        comment: Faker::Lorem.sentence,
+        top_game_id: top_game_id,
+        anticipated_game_id: anticipated_game_id, 
+        user_id: user_id
+    )
+end 
+
 
 
 puts "✅ Done seeding!"
