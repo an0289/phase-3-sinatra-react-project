@@ -41,6 +41,10 @@ group :development do
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
   gem "rerun"
+
+   # Used to generate seed data
+  # https://github.com/faker-ruby/faker
+  gem "faker", "~> 2.18"
 end
 
 # These gems will only be used when we are running tests
@@ -50,3 +54,6 @@ group :test do
   gem "rspec", "~> 3.10"
   gem "rspec-json_expectations", "~> 2.2"
 end
+
+
+
