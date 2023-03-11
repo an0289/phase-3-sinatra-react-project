@@ -8,8 +8,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/anticipated_games' do 
-    anticipated_games = AntcipatedGame.all
-    antcipated_games.to_json
+    anticipated_games = AnticipatedGame.all
+    anticipated_games.to_json
   end 
 
   get '/reviews' do
