@@ -39,10 +39,10 @@ AnticipatedGame.create(name: "Dead Space (Remake)", platforms: "PC, PlayStation 
 AnticipatedGame.create(name: "Forspoken", platforms: "PC, PlayStation 5", release_date: "01/24/2023", image: "https://fyre.cdn.sewest.net/forspoken/6189087b0af2d9001990bfe2/sharing-p3zcX_kG4.png")
 AnticipatedGame.create(name: "Fire Emblem Engage", platforms: "Nintendo Switch", release_date: "01/20/2023", image: "https://d.newsweek.com/en/full/2115421/fire-emblem-engage.png?w=1600&h=1600&q=88&f=519af8a6cb9ea6d94a0bb02ce7496bee")
 
-Review.create(score: "7 out of 10", comment: "Great graphics, okay story", top_game_id: 1, username: Faker::Name.name)
-Review.create(score: "10 out of 10", comment: "awesome gameplay, and great replayability", top_game_id: 10, username: Faker::Name.name)
-Review.create(score: "10 out of 10", comment: "Such an amazing story, amazing graphics, and amazing gameplay", top_game_id: 9, username: Faker::Name.name)
-Review.create(score: "3 out of 10", comment: "did not live up to expectations", anticipated_game_id: 5, username: Faker::Name.name)
+Review.create(score: "7 out of 10", comment: "Great graphics, okay story", top_game_id: 1, username: Faker::Name.name, avatar: Faker::Avatar.image)
+Review.create(score: "10 out of 10", comment: "awesome gameplay, and great replayability", top_game_id: 10, username: Faker::Name.name, avatar: Faker::Avatar.image)
+Review.create(score: "10 out of 10", comment: "Such an amazing story, amazing graphics, and amazing gameplay", top_game_id: 9, username: Faker::Name.name, avatar: Faker::Avatar.image)
+Review.create(score: "3 out of 10", comment: "did not live up to expectations", anticipated_game_id: 5, username: Faker::Name.name, avatar: Faker::Avatar.image)
 
 # 10.times do
 #     User.create(name: Faker::Name.name)

@@ -12,10 +12,11 @@ class ApplicationController < Sinatra::Base
     anticipated_games.to_json(include: :reviews)
   end  
 
-  get '/users' do 
-    users = User.all 
-    users.to_json
-  end 
+  # get '/anticipated_games/:id' do 
+  #   anticipated_game = AnticipatedGame.find(params[:id])
+
+  #   anticipated_game.to_json(include: :reviews)
+  # end 
 
   get '/reviews' do
     reviews = Review.all
@@ -27,6 +28,12 @@ class ApplicationController < Sinatra::Base
     anticipated_game = AnticipatedGame.find(params[:id])
     anticipated_game.update(release_date: params[:release_date])
     anticipated_game.to_json
+  end 
+
+  patch '/reviews/:id' do
+    review = Review.find(params[:id])
+    review.update(comment: params[:comment])
+    review.to_json
   end 
 
   # post '/users' do
