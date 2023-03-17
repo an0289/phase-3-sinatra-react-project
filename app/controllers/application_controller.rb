@@ -32,19 +32,16 @@ class ApplicationController < Sinatra::Base
 
   patch '/reviews/:id' do
     review = Review.find(params[:id])
-    review.update(comment: params[:comment])
+    review.update(
+      score: params[:score],
+      comment: params[:comment]
+      )
     review.to_json
   end 
 
-  # post '/users' do
-  #   user = User.create(
-  #     name: params[:name]
-  #   )
-  #   user.to_json
-  # end 
-
   post '/reviews' do
     review = Review.create(
+      avatar: params[:avatar],
       score: params[:score],
       comment: params[:comment],
       anticipated_game_id: params[:anticipated_game_id],
