@@ -57,4 +57,14 @@ class ApplicationController < Sinatra::Base
     review.to_json
   end 
 
+  post '/anticipated_games' do
+    anticipated_game = AnticipatedGame.create(
+      name: params[:name],
+      image: params[:image],
+      platforms: params[:platforms],
+      release_date: params[:release_date],
+      website: params[:website]
+    )
+    anticipated_game.to_json
+  end 
 end
