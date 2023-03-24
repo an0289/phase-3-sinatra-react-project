@@ -67,4 +67,10 @@ class ApplicationController < Sinatra::Base
     )
     anticipated_game.to_json
   end 
+
+  delete '/anticipated_games/:id' do
+    anticipated_game = AnticipatedGame.find(params[:id])
+    anticipated_game.destroy
+    anticipated_game.to_json
+  end 
 end
