@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_17_050147) do
+ActiveRecord::Schema.define(version: 2023_03_24_014518) do
 
   create_table "anticipated_games", force: :cascade do |t|
     t.string "name"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 2023_03_17_050147) do
     t.datetime "updated_at"
     t.integer "top_game_id"
     t.integer "anticipated_game_id"
-    t.integer "user_id"
     t.string "username"
     t.string "avatar"
   end
@@ -40,12 +39,6 @@ ActiveRecord::Schema.define(version: 2023_03_17_050147) do
     t.integer "ranking"
     t.string "image"
     t.string "website"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
 end

@@ -46,9 +46,7 @@ class ApplicationController < Sinatra::Base
       comment: params[:comment],
       anticipated_game_id: params[:anticipated_game_id],
       top_game_id: params[:top_game_id],
-      username: params[:username],
-      created_at: params[:created_at],
-      updated_at: params[:updated_at]
+      username: params[:username]
     )
     review.to_json
   end 
