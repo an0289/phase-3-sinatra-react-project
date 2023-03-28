@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
      
     anticipated_game = AnticipatedGame.find(params[:id])
     anticipated_game.update(release_date: params[:release_date])
-    anticipated_game.to_json
+    anticipated_game.to_json(include: :reviews)
   end 
 
   patch '/reviews/:id' do
@@ -65,7 +65,7 @@ class ApplicationController < Sinatra::Base
       release_date: params[:release_date],
       website: params[:website]
     )
-    anticipated_game.to_json
+    anticipated_game.to_json(include: :reviews)
   end 
 
   delete '/anticipated_games/:id' do
